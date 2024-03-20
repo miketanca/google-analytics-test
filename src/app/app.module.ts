@@ -15,7 +15,6 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { MessagesComponent } from './messages/messages.component';
 import { Angulartics2Module } from 'angulartics2';
-// import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
 
 @NgModule({
   imports: [
@@ -30,8 +29,6 @@ import { Angulartics2Module } from 'angulartics2';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),
-    // NgxGoogleAnalyticsModule.forRoot('G-QLZ8YZVPBL'),
-    // NgxGoogleAnalyticsRouterModule,
     Angulartics2Module.forRoot(),
   ],
   declarations: [
